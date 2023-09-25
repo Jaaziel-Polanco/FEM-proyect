@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: bold ;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: regular ;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+body{
+    padding: 17%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #36384e;
+}
+h1{
+    font-family: bold;
+    color: #242742;
+    font-size: 60px;
+}
+h2 {
+    font-family: bold;
+    color: #242742;
+    font-size: 50px;
+}
+p{
+    font-family: regular ;
+    color: #36384e;
+    font-size: 17.5px;
+    line-height: 1.5;
+}
+
+.central_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+   border-radius: 35px;
+    background-color: hsl(0, 0%, 100%);
+
+}
+#imgMobile {
+    display: none;
+}
+.content {
+   height:76%; width: 42%;
+    gap: 25px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.benefits li {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+    color: #36384e;
+    font-family: regular;
+    font-size: 17.5px;
+    margin-bottom: 13px;
+}
+
+.input label{
+    display: flex;
+    justify-content: space-between;
+}
+.input label h5 {
+    font-family: bold;
+    color: #36384e;
+    margin-bottom: 10px;
+}
+#errorLabel {
+    font-size: 15px;
+    font-family: bold;
+}
+#email {
+    width: 100%;
+    border-color:hsla(231, 7%, 60%, 0.233) ;
+    border-radius: 8px;
+    padding: 18px;
+    font-family: regular;
+    font-size: 17.5px;
+    margin-bottom: 25px;
+}
+
+#email::placeholder {
+    color: #a09292de;
+}
+.btn {
+    width: 108%;
+    font-size: 17px;
+    font-family: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #242742;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    transition: 300ms;
+}
+
+.attribution {
+    text-align: center;
+}
+
+
+/* success email */
+.success {
+    height: 54vh; width: 51vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+   border-radius: 35px;
+    background-color: hsl(0, 0%, 100%);
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.success_p {
+    font-size: 14.5px;
+    font-family: regular;
+}
+.btn2 {
+    width: 91%;
+    font-size: 14px;
+    font-family: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #242742;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    transition: 300ms;
+}
+
+
+/* actives */
+
+.btn:hover{
+    padding: 23px;
+    background: rgb(244,102,117);
+    background: linear-gradient(90deg, rgba(244,102,117,1) 42%, rgba(233,109,32,1) 96%);
+}
+.btn2:hover{
+    padding: 18px;
+    background: rgb(244,102,117);
+    background: linear-gradient(90deg, rgba(244,102,117,1) 42%, rgba(233,109,32,1) 96%);
+}
+
+
+/* responsive */
+
+@media (max-width:1552px) and (min-width: 1150px) {
+
+    body {
+        padding: 0;
+        padding-top: 17%; padding-bottom: 17%;
+    }
+}
+
+@media (max-width:1149px) and (min-width: 850px) {
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .benefits li {
+        font-size: 15px;
+    }
+    #email {
+        width: 70%;
+        font-size: 13px;
+    }
+    .input label {
+        width: 90%;
+    }
+    .btn {
+        width: 92%;
+        font-size: 11px;
+    }
+    .central_img {
+        width: 45%;
+        height: 45%;
+    }
+    #errorLabel {
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width:849px) and (min-width: 375px) {
+    body {
+       padding: 0px;
+    }
+   .success {
+    width: 375px; height: fit-content;
+    border-radius: 0;
+    justify-content: center;
+    padding: 20px;
+   }
+   .cont {
+    margin-top:135px ;
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+   .btn2 {
+    margin-top: 33vh;
+    margin-bottom: 20px;
+    padding: 20px;
+   }
+    .central_box {
+        display: n;
+         width: 375px; height: fit-content;
+        border-radius: 0;
+        flex-direction: column;
+      padding: 0;
+      gap: 30px;
+      align-items: start;
+    }
+   .imgDeskop {
+    display: none;
+   }
+    #imgMobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .content {
+        width: 89%; height: 100%;
+      margin: 0;
+       padding: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .custom_list li {
+        font-size: 18px;
+    }
+    #email {
+        width: 77%;
+    }
+    .btn {
+        width: 87%;
+    }
+    .attribution {
+        display: none;
+    }
+
+
+
+}

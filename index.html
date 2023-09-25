@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+ 
+
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+   <div class="central_box">
+    <img id="imgMobile" src="./assets/images/illustration-sign-up-mobile.svg" width="375px" height="284px">
+   <div class="content">
+
+  <div class="title">
+    <h1>Stay updated!</h1>
+  </div>
+
+  <div class="text1">
+    <p> <b>Join 60,000+ product managers receiving monthly updates on:</b></p>
+  </div>
+
+  <div class="benefits">
+
+    <ul class="custom_list">
+      <li><img src="./assets/images/icon-list.svg" width="21px" height="21px"><b>Product discovery and building what matters</b></li>
+      <li><img src="./assets/images/icon-list.svg" width="21px" height="21px"><b>Measuring to ensure updates are a success</b></li>
+      <li><img src="./assets/images/icon-list.svg" width="21px" height="21px"><b>And much more!</b></li>
+    </ul>
+
+  </div>
+
+  <form class="input" id="emailForm">
+    <label for="email">
+        <h5><b>Email address</b></h5> <span id="errorLabel" class="error" style="color: red; display: none;">Valid email required</span>
+    </label>
+    <input type="email" name="email" id="email" placeholder="email@company.com">
+    
+    <input class="btn" type="submit" value="Subscribe to monthly newsletter">
+</form>
+
+
+   </div>
+
+   <div class="central_img">
+    <img class="imgDeskop" src="./assets/images/illustration-sign-up-desktop.svg" width="100%" height="100%">
+   </div>
+
+  </div>
+  
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div class="success">
+    <div class="cont">
+    <img src="./assets/images/icon-success.svg" width="64px" height="64px" alt="">
+    <div> <h2><b>Thanks for subscribing!</b></h2></div>
+
+ <div> <p> <b class="success_p"> <!--contenedor de correo y mensaje de success-->   </b> </p></div>
+
+    <a href="./index.html" class="btn2">Dismiss message</a>
+   
+
+</div>
+
+  </div>
+
+
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jaaziel Polanco</a>.
+  </div>
+<script src="./js/index.js"></script>
+</body>
+</html>
